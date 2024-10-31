@@ -4,6 +4,12 @@ H
 .
 p
 d
+# Rule undefinition: join the lines, then remove a pair of <> and ><
+g/$/s//|/
+,j
+g/<> *\(.*\)\(.*\)|\(.*\)|>< *\1|/s//\3/g
+g/|/s/|/\
+/
 g/^[[:space:]]*/s///
 g/\([^(]\)<>/s//\1\
 <>/g
