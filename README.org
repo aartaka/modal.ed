@@ -25,6 +25,7 @@ Theoretically.
 Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#destructive-modal][Destructive Modal]], though the plan is to get a couple of levels higher.
 
 * Limitations
+- Has a hard dependency on ed(1).
 - The depth and complexity of the rules is capped at:
   - 3? levels of parentheses nesting.
   - 5 registers per rule.
