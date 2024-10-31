@@ -28,6 +28,12 @@ This ed script /should/ do the same thing as Modal file.
 Theoretically.
 Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#destructive-modal][Destructive Modal]], though the plan is to get a couple of levels higher.
 
+An example session (using the bundled [[./example/]] files):
+#+begin_src sh
+  ./build.sh example/postcard.modal > postcard.ed
+  ed -s example/postcard.in < postcard.ed
+#+end_src
+
 * Limitations
 - The depth and complexity of the rules is capped at:
   - 3? levels of parentheses nesting.
