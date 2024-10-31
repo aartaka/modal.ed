@@ -31,7 +31,8 @@ Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.
 * Limitations
 - It compiles to static ed substitution rules, thus it has no dynamicity and homoiconicity.
   - [ ] Homoiconicity can probably be achieved by re-evaluating a script on itself in some way, but I didn't try that yet.
-- [ ] No I/O.
+- [ ] No special registers.
+  - [ ] Thus no I/O.
 - [ ] No lambda support.
 - No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glas to accept a contribution if someone steps up!
 
