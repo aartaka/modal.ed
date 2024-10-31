@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ed $1 < modal.ed
+ed -s $1 < modal.ed
