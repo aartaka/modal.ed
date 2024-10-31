@@ -29,6 +29,10 @@ Theoretically.
 Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#static-modal][Static Modal]], though the plan is to get a couple of levels higher.
 
 * Limitations
+- The depth and complexity of the rules is capped at:
+  - 3? levels of parentheses nesting.
+  - 5 registers per rule.
+    - Can be extended to 9 with some copy-pasting, but that's a hard cap.
 - It compiles to static ed substitution rules, thus it has no dynamicity and homoiconicity.
   - [ ] Homoiconicity can probably be achieved by re-evaluating a script on itself in some way, but I didn't try that yet.
 - [ ] No special registers.
