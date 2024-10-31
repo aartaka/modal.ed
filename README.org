@@ -26,7 +26,7 @@ and run it with ed:
 
 This ed script /should/ do the same thing as Modal.
 Theoretically.
-Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#static-modal][Static Modal]], though the plan is to get a couple of levels higher.
+Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#destructive-modal][Destructive Modal]], though the plan is to get a couple of levels higher.
 
 * Limitations
 - The depth and complexity of the rules is capped at:
