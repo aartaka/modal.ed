@@ -1,8 +1,12 @@
 H
 0i
 H
+a
 .
-p
+v/.\{0,1\}</p\
+d
+s/.*/&\
+./p
 d
 # Rule undefinition: join the lines, then remove a pair of <> and ><
 g/$/s//|/
