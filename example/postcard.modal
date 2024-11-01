@@ -1,6 +1,7 @@
-<> (-- ?x)
+what is modal
 <> (what is ?x) (is ?x a (programming language))
 <> (is ?x a ?y) (or, is ?x (a virtual machine))
 <> (or, is ?x ?y) (print (?x is ?y is (a meta-language)))
 <> ((a meta-language)) modal
+<> machine god
 <> (print ?:) ?:
