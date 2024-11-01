@@ -24,6 +24,33 @@ This ed script /should/ do the same thing as Modal file.
 Theoretically.
 Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#destructive-modal][Destructive Modal]], though the plan is to get a couple of levels higher.
 
+* Programming for modal.ed
+Postcard program (taken from Devine's wiki) is cheating,
+because it works almost right in modal.ed (compared against [[https://git.sr.ht/~rabbits/thuesday][modal.c]]):
+#+begin_src  sh
+  ed -s < postcard.ed
+  # => (modal (a virtual is god) is modal)
+  ./bin/modal postcard.modal
+  # => (modal is (a virtual god) is modal)
+#+end_src
+
+Other programs are more likely to crash and burn due to. [[Limitations]].
+There's a style of programming that is less likely to break in modal.ed:
+- Use rule delimiters (like commas or keywords in postcard.modal) to separate registers.
+  - Otherwise registers might match too much.
+- Don't use too nested or complex rules.
+  - More likely to either not compile at all
+  - Or cause some undefined behavior at runtime.
+- Use Lisp-like leading-function forms for complex tuples (if you must):
+#+begin_src lisp
+  (fn1 (fn2 (fn3 (rest before a tiger tail))))
+#+end_src
+
+Given all these limitations, why would one really use modal.ed?
+- Pragmatic answer :: They won't.
+- Hacker's answer :: Because it's intriguing to see how far it can get.
+- Pragmatic Modal Hacker's answer :: It's the only implementation supporting [[https://lists.sr.ht/~rabbits/horadric/%3C874j4xo5mi.fsf@aartaka.me%3E][rest rules]].
+
 * Limitations
 - POSIX regex are weak enough to cause problems in parsing. I warned you!
 - The depth and complexity of the rules is capped at:
