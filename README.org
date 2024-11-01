@@ -17,7 +17,7 @@ and then use the bundled [[./build.sh]] to compile any given Modal file to ed sc
 #+end_src
 and run it with ed:
 #+begin_src sh
-  ed -s example/postcard.in < postcard.ed
+  ed -s < postcard.ed
 #+end_src
 
 This ed script /should/ do the same thing as Modal file.
