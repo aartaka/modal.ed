@@ -12,6 +12,8 @@ d
 # Rule undefinition: join the lines, then remove a pair of <> and ><
 g/$/s//|/
 ,j
+g/\\n/s//\\\\n/g
+g/\\t/s//\\\\t/g
 g/<> *\(.*\)\(.*\)|\(.*\)|>< *\1|/s//\3/g
 s/|/\
 /g
@@ -98,7 +100,10 @@ a
 g/{{{/s/^.*{{{//
 g/}}}/s/}}}.*$//
 g/./s/}}}.*{{{//
-p
+g/\\t/s//	/g
+g/\\n/s//\
+/g
+,p
 Q
 .
 ,p
