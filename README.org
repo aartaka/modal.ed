@@ -65,6 +65,7 @@ Given all these limitations, why would one really use modal.ed?
   - [ ] ~?*~ should be possible with some hacking.
     - [ ] ~?^~ too, maybe?
   - [ ] No ~?.~, and maybe no need—can it be implemented as a rule instead?
+  - [ ] There are plans for a literal regex register ~?//~
   - [ ] No other registers yet, though.
 - [ ] No lambda support (yet?).
 - No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glas to accept a contribution if someone steps up!
