@@ -54,15 +54,19 @@ Given all these limitations, why would one really use modal.ed?
 * Limitations
 - POSIX regex are weak enough to cause problems in parsing. I warned you!
 - The depth and complexity of the rules is capped at:
-  - 3? levels of parentheses nesting.
+  - 3+ levels of parentheses nesting.
   - 5 registers per rule.
-    - Can be extended to 9 with some copy-pasting, but that's a hard cap.
+    - Can be extended to 9 with some copy-pasting, but that'd be a hard cap.
 - It compiles to static ed substitution rules, thus it has no dynamicity and homoiconicity.
+  - [X] There's rule undefinition, but it's static compile-time too.
   - [ ] Homoiconicity can probably be achieved by re-evaluating a script on itself in some way, but I didn't try that yet.
 - [ ] No special registers.
   - [X] Actually, there's ~?:~.
+  - [ ] ~?*~ should be possible with some hacking.
+    - [ ] ~?^~ too, maybe?
+  - [ ] No ~?.~, and maybe no need—can it be implemented as a rule instead?
   - [ ] No other registers yet, though.
-- [ ] No lambda support.
+- [ ] No lambda support (yet?).
 - No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glas to accept a contribution if someone steps up!
 
 * The Story
