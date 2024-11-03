@@ -18,11 +18,29 @@ and then use the bundled [[./build.sh]] to compile any given Modal file to ed sc
 and run it with ed:
 #+begin_src sh
   ed -s < postcard.ed
+  # (modal (a virtual is god) is modal)
 #+end_src
 
 This ed script /should/ do the same thing as Modal file.
 Theoretically.
 Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#destructive-modal][Destructive Modal]], though the plan is to get a couple of levels higher.
+
+You can also do a debug build by invoking the bundled [[./debug.sh]] after building the ed file:
+#+begin_src sh
+  ./build.sh example/postcard.modal > postcard.ed
+  ./debug.sh postcard.ed
+  ed -s < postcard.ed
+  # is modal a (programming language)
+  # or, is modal (a virtual machine)
+  # print (modal (a virtual is machine) is (a meta-language))
+  # print (modal (a virtual is machine) is modal)
+  # print (modal (a virtual is god) is modal)
+  # {{{(modal (a virtual is god) is modal)}}}
+  # (modal (a virtual is god) is modal)}}}
+  # (modal (a virtual is god) is modal)
+  # (modal (a virtual is god) is modal)
+#+end_src
+
 
 * Programming for modal.ed
 Postcard program (taken from Devine's wiki) is cheating,
