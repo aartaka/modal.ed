@@ -112,8 +112,9 @@ v/\\9/s|?\([^() ]\{1,\}\)\(.*\)?\1\(.*\)|{{{REGISTER\1}}}\2\\9\3|
 # Generate dummy registers unused in body
 g/?/s|?[^()/ ]\{1,\}|(*[^)]\\{1,\\})*|g
 g/?/s|?/\([^()/ ]*\)|\1|g
-# Just to have one place for modification instead of 30
-g/{{{REGISTER\/\([^/]\)\/*}}}/s||\\(\\(\1\\)\\)|g
+# Replace regex registers verbatim
+g/{{{REGISTER\/\([^/]*\)\/*}}}/s||\\(\\(\1\\)\\)|g
+# Replace other registers as default form
 g/{{{REGISTER[^}]*}}}/s||\\(.*\\(\\)\\)|g
 # Repeat ten times for repeat use
 g/g\//p
