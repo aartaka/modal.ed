@@ -4,9 +4,8 @@ H
 a
 .
 # Remove lambdas
-g/?(/d
 # Print the non-rule lines verbatim
-v/.\{0,1\}</p\
+v/^[<>?]/p\
 d
 # Add the period at the last line
 s/.*/&\
