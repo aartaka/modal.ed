@@ -59,6 +59,7 @@ There's a style of programming that is less likely to break in modal.ed:
 - Don't use too deeply nested rules.
   - More likely to either not compile at all.
   - Or cause some undefined behavior at runtime.
+- Put rules in the supposed order of application. Given that modal.ed is not looping indefinitely, but rather repeating all the rules N times, it's better to optimize for that restricted number of applications.
 - Use regex register, ~?/regex/~ to shape/match the inputs and control the greedy nature of default rules. Here's how reverse rules might look like with ~?/.~ for one-char matching.
 #+begin_src lisp
 <> (reverse (?x)) (reverse is () for (?x))
