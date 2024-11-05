@@ -92,8 +92,10 @@ g/\(«<>» *.*\)«\([^()» ]*\)»/s//\1«(\2)»/g
 g/\(«<>» *.*\)«\([^()» ]*\)»/s//\1«(\2)»/g
 # Finally, turn rules into substitutions
 g/«<>» *«(\([^»]*\))» *«(\([^»]*\))»/s||g/\1/s//\2/g|g
+# Preprocess lambda stray symbols into tuples (like above for rules)
+g/\(«?» *[^«]*\)«\([^()» ]*\)»/s//\1«(\2)»/g
+g/\(«?» *[^«]*«[^«]*\)«\([^()» ]*\)»/s//\1«(\2)»/g
 # Then, turn lambdas into substitutions too, but one-time only
-# Implies that that both sides of lambda are wrapped into parens for now
 g/«?» «(\([^»]*\))» *«(\([^»]*\))» «\([^»]*\)»/s||a\
 \3\
 .\
