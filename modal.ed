@@ -3,7 +3,9 @@ H
 H
 a
 .
-# Remove lambdas
+# Remove comment lambdas
+g/?(([^() ]*))/d
+g/?([^() ]*)/d
 # Print the non-rule lines verbatim
 v/^[<>?]/p\
 d
