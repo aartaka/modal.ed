@@ -83,7 +83,7 @@ Given all these limitations, why would one really use modal.ed?
   - 5 registers per rule.
 - It compiles to static ed substitution rules, thus it has no dynamicity and homoiconicity.
   - [X] There's rule undefinition, but it's static compile-time too.
-  - [ ] No lambdas yet, though some might be compilable.
+  - [X] Lambdas are supported as one-time substitutions!
   - [ ] Homoiconicity can probably be achieved by re-evaluating a script on itself in some way, but I didn't try that yet.
 - [ ] No special registers.
   - [X] Actually, there's ~?:~.
