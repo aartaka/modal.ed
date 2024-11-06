@@ -44,7 +44,7 @@ You can also do a debug build by invoking the bundled [[./debug.sh]] after build
 
 
 * Programming for modal.ed
-Postcard program (taken from Devine's wiki) is cheating,
+Postcard program (adapted from Devine's wiki) is cheating,
 because it works almost right in modal.ed (compared against [[https://git.sr.ht/~rabbits/thuesday][modal.c]]):
 #+begin_src sh
   ed -s < postcard.ed
