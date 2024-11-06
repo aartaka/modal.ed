@@ -107,4 +107,4 @@ So I asked the most sensible question: why Modal and not ed/sed?
 
 Even though I've got sensible replies then, I was uneasy—why use Modal if ed works well enough?
 Thus this project—an attempt to fit Modal into ed rules.
-This is a doomed enterprise, but at least it's fun!
+This is a doomed enterprise (is it?), but at least it's fun!
