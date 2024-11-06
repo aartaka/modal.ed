@@ -93,7 +93,7 @@ Given all these limitations, why would one really use modal.ed?
   - [X] There's a special literal regex register ~?/regex/~
   - [ ] ~?*~ should be possible with some hacking.
     - [ ] ~?^~ too, maybe?
-  - [X] No ~?.~ supported, utilizing the greedy nature of regular register matching.
+  - [X] ~?.~ supported, utilizing the greedy nature of regular register matching.
   - [X] No =?~=, and won't be—the whole nature of ed script takes up standard input as script instead of user input.
     - There might be some hacks, but I'm not aware of them.
   - [ ] No other registers yet, though.
