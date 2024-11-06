@@ -78,7 +78,7 @@ Given all these limitations, why would one really use modal.ed?
 - Hacker's answer :: Because it's intriguing to see how far it can get.
 - Pragmatic Modal Hacker's answer :: It's the only implementation supporting [[https://lists.sr.ht/~rabbits/horadric/%3C874j4xo5mi.fsf@aartaka.me%3E][rest rules]] and regex registers.
 
-* Limitations
+* Limitations/TODOs
 - POSIX regex are weak enough to cause problems in parsing. I warned you!
 - The depth and complexity of the rules is capped at:
   - 3+ (in the worst case) levels of parentheses nesting.
@@ -87,12 +87,14 @@ Given all these limitations, why would one really use modal.ed?
   - [X] There's rule undefinition, but it's static compile-time too.
   - [X] Lambdas are supported as one-time substitutions!
   - [ ] Homoiconicity can probably be achieved by re-evaluating a script on itself in some way, but I didn't try that yet.
-- [ ] No special registers.
-  - [X] Actually, there's ~?:~.
+- [ ] Incomplete special register support.
+  - [X] There's ~?:~.
   - [X] There's a special literal regex register ~?/regex/~
   - [ ] ~?*~ should be possible with some hacking.
     - [ ] ~?^~ too, maybe?
   - [ ] No ~?.~, and maybe no need—can it be implemented as a rule instead?
+  - [X] No =?~=, and won't be—the whole nature of ed script takes up standard input as script instead of user input.
+    - There might be some hacks, but I'm not aware of them.
   - [ ] No other registers yet, though.
 - No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glad to accept a contribution if someone steps up!
 
