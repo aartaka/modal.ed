@@ -94,7 +94,7 @@ Given all these limitations, why would one really use modal.ed?
     - [ ] ~?^~ too, maybe?
   - [ ] No ~?.~, and maybe no need—can it be implemented as a rule instead?
   - [ ] No other registers yet, though.
-- No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glas to accept a contribution if someone steps up!
+- No Thuesday extensions like ALU and drawing. And it's unlikely to ever be implemented—I don't like the idea of expanding pure systems with "practical" features. But I'll be glad to accept a contribution if someone steps up!
 
 * The Story
 I joined Merveilles Town in August 2024, after my previous Fediverse home, kopimi.space, shut down.
