@@ -153,7 +153,7 @@ v/\\9/s|?\([^() ]\{1,\}\)\(.*\)?\1\(.*\)|{{{REGISTER\1}}}\2\\9\3|
 g/?/s|?[^()/ ]\{1,\}|(*[^)]\\{1,\\})*|g
 g/?/s|?/\([^()/ ]*\)|\1|g
 # Replace regex registers verbatim
-g/{{{REGISTER\/\([^/]*\)\/*}}}/s||\\(\\(\1\\)\\)|g
+g/{{{REGISTER\/\([^/]*\)\/\{1,\}}}}/s||\\(\\(\1\\)\\)|g
 # Replace wildcard registers with... wildcards
 g/ {{{REGISTER$}}} /s||\\(\\(.*\\)\\)|g
 g/ {{{REGISTER$}}}/s||\\(\\(.*\\)\\)|g
