@@ -155,7 +155,7 @@ g/?/s|?/\([^()/ ]*\)|\1|g
 # Replace regex registers verbatim
 g/{{{REGISTER\/\([^/]*\)\/*}}}/s||\\(\\(\1\\)\\)|g
 # Replace other registers as default form
-g/{{{REGISTER[^}]*}}}/s||\\(.*\\(\\)\\)|g
+g/{{{REGISTER[^}]*}}}/s||\\(.\\{1,\\}\\(\\)\\)|g
 # Repeat ten times for repeat use
 g/g\//p
 g/g\//p
