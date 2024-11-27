@@ -154,6 +154,10 @@ g/?/s|?[^()/ ]\{1,\}|(*[^)]\\{1,\\})*|g
 g/?/s|?/\([^()/ ]*\)|\1|g
 # Replace regex registers verbatim
 g/{{{REGISTER\/\([^/]*\)\/*}}}/s||\\(\\(\1\\)\\)|g
+# Replace wildcard registers with... wildcards
+g/ {{{REGISTER$}}} /s||\\(\\(.*\\)\\)|g
+g/ {{{REGISTER$}}}/s||\\(\\(.*\\)\\)|g
+g/{{{REGISTER$}}} /s||\\(\\(.*\\)\\)|g
 # Replace other registers as default form
 g/{{{REGISTER[^}]*}}}/s||\\(.\\{1,\\}\\(\\)\\)|g
 # Repeat ten times for repeat use

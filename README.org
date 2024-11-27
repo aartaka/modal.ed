@@ -91,6 +91,8 @@ Given all these limitations, why would one really use modal.ed?
 - [ ] Incomplete special register support.
   - [X] There's ~?:~.
   - [X] There's a special literal regex register ~?/regex/~
+  - [X] There's ~?$~ wildcard register matching zero or more elements.
+    - Zero or more anything, rather?
   - [ ] ~?*~ should be possible with some hacking.
     - [ ] ~?^~ too, maybe?
   - [X] ~?.~ supported, utilizing the greedy nature of regular register matching.
