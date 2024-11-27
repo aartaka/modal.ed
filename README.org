@@ -23,7 +23,7 @@ and run it with ed:
 
 This ed script /should/ do the same thing as Modal file.
 Theoretically.
-Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#lambda-modal][Lambda Modal]],
+Right now, the behavior is that of [[https://www.sheeeeeeeep.art/types-of-modal.html#constructive-modal][Constructive Modal]] with some lambda support,
 but that's left to be proved thoroughly.
 
 You can also do a debug build by invoking the bundled [[./debug.sh]] after building the ed file:
