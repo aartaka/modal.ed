@@ -15,7 +15,7 @@ and then use the bundled [[./build.sh]] to compile any given Modal file to ed sc
 #+begin_src sh
   ./build.sh example/postcard.modal > postcard.ed
 #+end_src
-and run it with ed:
+and run it with ed (maybe removing the "Newline appended" from the top of the generated script, until it's fixed in upstream GNU ed):
 #+begin_src sh
   ed -s < postcard.ed
   # (modal (a virtual is god) is modal)
